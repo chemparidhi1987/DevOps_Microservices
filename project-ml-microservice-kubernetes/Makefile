@@ -6,14 +6,13 @@
 # (Optional) Build a simple integration test
 
 setup:
-	# Create python virtualenv & source it
-	# source ~/.devops/bin/activate
-	python3 -m venv ~/.devops
+	python -m venv ~/.devops 
+	~\.devops\Scripts\activate
 
 install:
-	# This should be run from inside a virtualenv
-	pip install --upgrade pip &&\
-		pip install -r requirements.txt
+	python -m ensurepip
+	python.exe -m pip install --upgrade pip
+	pip install -r requirements.txt
 
 test:
 	# Additional, optional, tests could go here
