@@ -1,7 +1,10 @@
 setup:
-	python3 -m venv ~/.myrepo
-
+	python -m venv ~/.myrepo
+	~\.myrepo\Scripts\activate
+	
 install:
+	python -m ensurepip
+	python.exe -m pip install --upgrade pip
 	pip install -r requirements.txt
 
 test:

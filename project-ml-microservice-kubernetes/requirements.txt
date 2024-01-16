@@ -5,10 +5,10 @@ Jinja2==2.10.3
 MarkupSafe==1.1.1
 numpy
 pandas
-python-dateutil 
+python-dateutil
 pytz
 scikit-learn 
 scipy 
 six 
 Werkzeug 
-pylint 
+pylint
