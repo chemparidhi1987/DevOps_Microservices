@@ -3,9 +3,7 @@ from flask.logging import create_logger
 import logging
 
 import pandas as pd
-# from sklearn.externals import joblib
-# import sklearn.externals
-import joblib
+from sklearn.externals import joblib
 from sklearn.preprocessing import StandardScaler
 
 app = Flask(__name__)
@@ -24,7 +22,7 @@ def scale(payload):
 
 @app.route("/")
 def home():
-    html = "<h3>Sklearn Prediction Home</h3>"
+    html = f"<h3>Sklearn Prediction Home</h3>"
     return html.format(format)
 
 
